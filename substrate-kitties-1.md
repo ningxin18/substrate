@@ -14,7 +14,7 @@
 
 编程作业，需要完成以下要求并且提交代码链接：
 
-####1. 增加买和卖的extrinsic，对kitties的实现进行重构，提取出公共代码
+#### 1.增加买和卖的extrinsic，对kitties的实现进行重构，提取出公共代码
 
 ```
 /// 出售 Kitty
@@ -77,7 +77,7 @@
 		}
 ```
 
-####2. kittyindex不在pallet中指定，而是在runtime里面绑定
+#### 2.kittyindex不在pallet中指定，而是在runtime里面绑定
 
 ```
 impl pallet_kitties::Config for Runtime {
@@ -90,7 +90,7 @@ impl pallet_kitties::Config for Runtime {
 
 ```
 
-####3. 测试代码能测试所有的五个方法，能检查所有的定义event，能测试出所有定义的错误类型
+#### 3.测试代码能测试所有的五个方法，能检查所有的定义event，能测试出所有定义的错误类型
 
 ```
 
@@ -278,7 +278,7 @@ fn buy_success() {
 }
 ```
 
-####4. 引入balances里面的方法，在创建时质押一定数量的token，在购买时支付token
+#### 4.引入balances里面的方法，在创建时质押一定数量的token，在购买时支付token
 
 ```
 [dependencies.pallet-balances]
